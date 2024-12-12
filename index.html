@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carspotting</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- En-tête -->
+  <header class="bg-blue-700 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Carspotting</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Accueil</a></li>
+          <li><a href="#" class="hover:text-gray-300">Articles</a></li>
+          <li><a href="#" class="hover:text-gray-300">À propos</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Articles en vedette -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Articles en vedette</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Article 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img.cars/Porsche-Panamera-2025-Turbo-S-E-Hybrid-et-GTS-14.jpg" alt="Article 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Porsche Panamera GTS 2025</h3>
+          <p class="text-gray-600">Sous le capot, la plus sportive de la gamme s’offre  moteur V8 de 500 chevaux, encore plus mélodieux que la version Turbo S E-hybrid de 782 ch, l’esprit sportif de cette berline de luxe saura t-elle encore nous séduire ? En route pour découvrir cette nouveauté signée Porsche !</p>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img.cars/Mercedes-benz-Classe-E-450d-amg-Line-5.jpg" alt="Article 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Mercedes Classe E 450d</h3>
+          <p class="text-gray-600"> La nouvelle Mercedes Classe E dans cette motorisation diesel va se faire rare sur nos routes. Sous le capot, le moteur 6 cylindres en ligne de 3L de cylindrée dégage un bel agrément et des consommations plus basses qu’un moteur hybride essence sur longs trajets.</p>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img.cars/Porsche-Macan-Rwd-electric-1.jpg" alt="Article 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold mb-2">Macan RWD</h3>
+          <p class="text-gray-600">Le Macan 2025 se positionne en dessous du Cayenne en termes de gabarit, mais n’en perd rien en caractère. Les lignes sont affinées et l’aérodynamisme soigné (Cx de 0,25). Disponible avec des jantes de 21 à 22 pouces et un Pack Offroad en option, ce modèle se veut polyvalent, adapté aussi bien aux trajets urbains qu’aux longues balades. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catégories -->
+  <section class="container mx-auto mt-12">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Catégories</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+        <button class="category-btn bg-blue-200 text-blue-800 px-4 py-2 rounded-full">
+            Sportives
+          </button>
+
+          <button class="category-btn bg-blue-200 text-blue-800 px-4 py-2 rounded-full">
+            Berlines
+          </button>
+
+          <button class="category-btn bg-blue-200 text-blue-800 px-4 py-2 rounded-full">
+            SUV
+          </button>
+
+          <button class="category-btn bg-blue-200 text-blue-800 px-4 py-2 rounded-full">
+            Electriques
+          </button>
+          
+    </div>
+  </section>
+
+  <!-- Articles récents -->
+  <section class="container mx-auto mt-12">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Articles récents</h2>
+    <ul class="space-y-6">
+      <li class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-lg font-bold"><button>Porsche Panamera GTS 2025</button></h3>
+        <span class="text-sm text-gray-500">Publié le 29/11/2024</span>
+      </li>
+      <li class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-lg font-bold"> <button>Lamborghini Revuelto</button></h3>
+        <span class="text-sm text-gray-500">Publié le 25/11/2024</span>
+      </li>
+      <li class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-lg font-bold"> <button>Mercedes G63 AMG</button></h3>
+        <span class="text-sm text-gray-500">Publié le 20/11/2024</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Formulaire newsletter -->
+  <section class="container mx-auto mt-12 bg-gray-200 p-6 rounded-lg">
+    <h2 class="text-3xl font-semibold mb-4 text-center">Inscrivez-vous à notre newsletter</h2>
+    <form class="flex flex-col md:flex-row gap-4">
+      <input type="email" placeholder="Votre adresse email" class="flex-1 px-4 py-2 rounded border-gray-300">
+      <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">S'inscrire</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Carspotting. Tous droits réservés.</p>
+
+      <div class="social" "flex justify-center gap-4 mt-4">
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

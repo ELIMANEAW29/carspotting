@@ -1,0 +1,72 @@
+/* Importer les polices personnalisées si nécessaire */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Appliquer une police personnalisée à tout le site */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* En-tête */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+/* Images des articles en vedette */
+.article-card img {
+  transition: transform 0.3s ease-in-out; /* Ajout d'un effet au survol */
+}
+
+.article-card img:hover {
+  transform: scale(1.05); /* Zoom léger sur l'image */
+}
+
+/* Boutons des catégories */
+.category-btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-btn:hover {
+  background-color: #2563eb; /* Change en bleu foncé */
+  color: white;
+  transform: translateY(-5px); /* Léger effet de soulèvement */
+}
+
+/* Articles récents */
+.recent-article:hover {
+  background-color: #f3f4f6; /* Change l'arrière-plan au survol */
+}
+
+/* Formulaire Newsletter */
+input[type="email"] {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #2563eb; /* Couleur bleue au focus */
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Pied de page */
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #2563eb; /* Change en bleu foncé */
+}
+
+/* Animation fade-in (optionnel) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
